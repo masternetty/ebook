@@ -1,8 +1,8 @@
 
-function abrirModal() {
-    document.getElementById('modal').style.display = 'flex';
+function abrirModal(id) {
+    document.getElementById('modal' + id).style.display = 'flex';
 }
 
-function fecharModal() {
-    document.getElementById('modal').style.display = 'none';
+function fecharModal(id) {
+    document.getElementById('modal' + id).style.display = 'none';
 }
