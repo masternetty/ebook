@@ -1,110 +1,92 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    background-color: #000;
-    color: #0f0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a0a0a; /* Fundo preto */
+  color: #fff;
 }
-.container {
-    text-align: center;
-    padding: 50px 20px;
+
+header {
+  background-color: #00cc44; /* Verde */
+  padding: 20px;
+  text-align: center;
 }
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+
+header h1 {
+  font-size: 2.5em;
 }
-.card {
-    width: 200px;
-    height: 300px;
-    perspective: 1000px;
-    cursor: pointer;
+
+.catalogo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px 0;
 }
-.book {
-    width: 100%;
-    height: 100%;
-    background-color: #0a0;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #0f0;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
+
+.livro {
+  margin: 20px;
+  position: relative;
 }
-.card:hover .book {
-    transform: rotateY(180deg);
+
+.livro-flutuante {
+  background-color: #111; /* Fundo escuro para os livros */
+  border: 2px solid #00cc44; /* Bordas verdes */
+  border-radius: 8px;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  animation: flutuar 3s ease-in-out infinite;
 }
-.book-cover {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#0a0, #060);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    padding: 10px;
-    backface-visibility: hidden;
+
+.livro-flutuante img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
-.buttons {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
+.livro-flutuante h3 {
+  margin-top: 15px;
+  font-size: 1.3em;
+  color: #00cc44;
 }
-.buttons button, .buttons a {
-    background-color: #000;
-    color: #0f0;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
+
+.livro-flutuante p {
+  margin-top: 10px;
+  font-size: 0.9em;
 }
-.buttons button:hover, .buttons a:hover {
-    background-color: #060;
+
+.comprar {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #00cc44;
+  color: #111;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
+
+.comprar:hover {
+  background-color: #009933;
 }
-.modal-content {
-    background-color: #fff;
-    color: #000;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    width: 80%;
-    max-width: 600px;
-}
-.modal-content video {
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-.close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-    cursor: pointer;
-    color: #000;
-}
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    color: white;
-    font-size: 30px;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0 0 10px #25D366;
+
+/* Efeito de flutuação (animação) */
+@keyframes flutuar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

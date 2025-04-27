@@ -1,141 +1,43 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Venda de eBooks - Spurgeon</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Loja de eBooks</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Conheça nossos eBooks</h1>
-    <div class="cards-container">
-      <div class="card" onclick="abrirModal(0)">
-        <div class="book">
-          <div class="book-cover">Esboços Bíblicos Volume 2</div>
-        </div>
-        <div class="buttons">
-          <button>Ver mais</button>
-          <a href="#">Comprar agora</a>
-        </div>
-      </div>
-      <div class="card" onclick="abrirModal(1)">
-        <div class="book">
-          <div class="book-cover">Esboços Bíblicos Volume 3</div>
-        </div>
-        <div class="buttons">
-          <button>Ver mais</button>
-          <a href="#">Comprar agora</a>
-        </div>
-      </div>
-      <div class="card" onclick="abrirModal(2)">
-        <div class="book">
-          <div class="book-cover">A Consequência da Soberania Divina</div>
-        </div>
-        <div class="buttons">
-          <button>Ver mais</button>
-          <a href="#">Comprar agora</a>
-        </div>
-      </div>
-      <div class="card" onclick="abrirModal(3)">
-        <div class="book">
-          <div class="book-cover">Olhe para Cristo Vol. 1</div>
-        </div>
-        <div class="buttons">
-          <button>Ver mais</button>
-          <a href="#">Comprar agora</a>
-        </div>
-      </div>
-      <div class="card" onclick="abrirModal(4)">
-        <div class="book">
-          <div class="book-cover">Olhe para Cristo Vol. 2</div>
-        </div>
-        <div class="buttons">
-          <button>Ver mais</button>
-          <a href="#">Comprar agora</a>
-        </div>
-      </div>
-      <div class="card" onclick="abrirModal(5)">
-        <div class="book">
-          <div class="book-cover">Santidade, a Lei da Casa de Deus</div>
-        </div>
-        <div class="buttons">
-          <button>Ver mais</button>
-          <a href="#">Comprar agora</a>
-        </div>
-      </div>
-      <div class="card" onclick="abrirModal(6)">
-        <div class="book">
-          <div class="book-cover">Soberania e Salvação</div>
-        </div>
-        <div class="buttons">
-          <button>Ver mais</button>
-          <a href="#">Comprar agora</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <header>
+    <h1>Loja de eBooks</h1>
+  </header>
 
-  <!-- Modais -->
-  
-  <div id="modal0" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="fecharModal(0)">&times;</span>
-      <h2>Livro 1</h2>
-      <video src="videos/ebook1.mp4" controls></video>
+  <section id="catalogo" class="catalogo">
+    <h2>Nosso Catálogo</h2>
+
+    <div class="livro">
+      <div class="livro-flutuante">
+        <img src="ebook1.jpg" alt="Capa do eBook 1">
+        <h3>eBook Título 1</h3>
+        <p>Uma breve descrição do livro. Clique para saber mais.</p>
+        <a href="#" class="comprar">Comprar</a>
+      </div>
     </div>
-  </div>
-  
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="fecharModal(1)">&times;</span>
-      <h2>Livro 2</h2>
-      <video src="videos/ebook2.mp4" controls></video>
+
+    <div class="livro">
+      <div class="livro-flutuante">
+        <img src="ebook2.jpg" alt="Capa do eBook 2">
+        <h3>eBook Título 2</h3>
+        <p>Uma breve descrição do livro. Clique para saber mais.</p>
+        <a href="#" class="comprar">Comprar</a>
+      </div>
     </div>
-  </div>
-  
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="fecharModal(2)">&times;</span>
-      <h2>Livro 3</h2>
-      <video src="videos/ebook3.mp4" controls></video>
-    </div>
-  </div>
-  
-  <div id="modal3" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="fecharModal(3)">&times;</span>
-      <h2>Livro 4</h2>
-      <video src="videos/ebook4.mp4" controls></video>
-    </div>
-  </div>
-  
-  <div id="modal4" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="fecharModal(4)">&times;</span>
-      <h2>Livro 5</h2>
-      <video src="videos/ebook5.mp4" controls></video>
-    </div>
-  </div>
-  
-  <div id="modal5" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="fecharModal(5)">&times;</span>
-      <h2>Livro 6</h2>
-      <video src="videos/ebook6.mp4" controls></video>
-    </div>
-  </div>
-  
-  <div id="modal6" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="fecharModal(6)">&times;</span>
-      <h2>Livro 7</h2>
-      <video src="videos/ebook7.mp4" controls></video>
-    </div>
-  </div>
-  
-  <a href="https://wa.me/5519986083276" class="whatsapp-button" target="_blank">💬</a>
-  <script src="js/script.js"></script>
+
+    <!-- Adicione mais livros aqui -->
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Loja de eBooks</p>
+  </footer>
 </body>
 </html>
