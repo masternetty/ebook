@@ -2,181 +2,140 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venda de eBooks - Spurgeon</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venda de eBooks - Spurgeon</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Conheça nossos eBooks</h1>
-        <div class="cards-container">
-            
-    <div class="card">
-        <h2>Esboços Bíblicos Volume 2</h2>
-        <button onclick="abrirModal(0)">Ver mais</button>
-        <a href="#" class="buy-button">Comprar agora</a>
-    </div>
-    
-    <div class="card">
-        <h2>Esboços Bíblicos Volume 3</h2>
-        <button onclick="abrirModal(1)">Ver mais</button>
-        <a href="#" class="buy-button">Comprar agora</a>
-    </div>
-    
-    <div class="card">
-        <h2>A Consequência da Soberania Divina</h2>
-        <button onclick="abrirModal(2)">Ver mais</button>
-        <a href="#" class="buy-button">Comprar agora</a>
-    </div>
-    
-    <div class="card">
-        <h2>Olhe para Cristo Vol. 1</h2>
-        <button onclick="abrirModal(3)">Ver mais</button>
-        <a href="#" class="buy-button">Comprar agora</a>
-    </div>
-    
-    <div class="card">
-        <h2>Olhe para Cristo Vol. 2</h2>
-        <button onclick="abrirModal(4)">Ver mais</button>
-        <a href="#" class="buy-button">Comprar agora</a>
-    </div>
-    
-    <div class="card">
-        <h2>Santidade, a Lei da Casa de Deus</h2>
-        <button onclick="abrirModal(5)">Ver mais</button>
-        <a href="#" class="buy-button">Comprar agora</a>
-    </div>
-    
-    <div class="card">
-        <h2>Soberania e Salvação</h2>
-        <button onclick="abrirModal(6)">Ver mais</button>
-        <a href="#" class="buy-button">Comprar agora</a>
-    </div>
-    
+  <div class="container">
+    <h1>Conheça nossos eBooks</h1>
+    <div class="cards-container">
+      <div class="card" onclick="abrirModal(0)">
+        <div class="book">
+          <div class="book-cover">Esboços Bíblicos Volume 2</div>
         </div>
+        <div class="buttons">
+          <button>Ver mais</button>
+          <a href="#">Comprar agora</a>
+        </div>
+      </div>
+      <div class="card" onclick="abrirModal(1)">
+        <div class="book">
+          <div class="book-cover">Esboços Bíblicos Volume 3</div>
+        </div>
+        <div class="buttons">
+          <button>Ver mais</button>
+          <a href="#">Comprar agora</a>
+        </div>
+      </div>
+      <div class="card" onclick="abrirModal(2)">
+        <div class="book">
+          <div class="book-cover">A Consequência da Soberania Divina</div>
+        </div>
+        <div class="buttons">
+          <button>Ver mais</button>
+          <a href="#">Comprar agora</a>
+        </div>
+      </div>
+      <div class="card" onclick="abrirModal(3)">
+        <div class="book">
+          <div class="book-cover">Olhe para Cristo Vol. 1</div>
+        </div>
+        <div class="buttons">
+          <button>Ver mais</button>
+          <a href="#">Comprar agora</a>
+        </div>
+      </div>
+      <div class="card" onclick="abrirModal(4)">
+        <div class="book">
+          <div class="book-cover">Olhe para Cristo Vol. 2</div>
+        </div>
+        <div class="buttons">
+          <button>Ver mais</button>
+          <a href="#">Comprar agora</a>
+        </div>
+      </div>
+      <div class="card" onclick="abrirModal(5)">
+        <div class="book">
+          <div class="book-cover">Santidade, a Lei da Casa de Deus</div>
+        </div>
+        <div class="buttons">
+          <button>Ver mais</button>
+          <a href="#">Comprar agora</a>
+        </div>
+      </div>
+      <div class="card" onclick="abrirModal(6)">
+        <div class="book">
+          <div class="book-cover">Soberania e Salvação</div>
+        </div>
+        <div class="buttons">
+          <button>Ver mais</button>
+          <a href="#">Comprar agora</a>
+        </div>
+      </div>
     </div>
+  </div>
 
-    
-    <div id="modal0" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="fecharModal(0)">&times;</span>
-            <h2>Esboços Bíblicos Volume 2</h2>
-            <p>Conheça mais sobre o livro Esboços Bíblicos Volume 2 e aprofunde sua fé.</p>
-            <video src="videos/ebook1.mp4" controls></video>
-        </div>
+  <!-- Modais -->
+  
+  <div id="modal0" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal(0)">&times;</span>
+      <h2>Livro 1</h2>
+      <video src="videos/ebook1.mp4" controls></video>
     </div>
-    
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="fecharModal(1)">&times;</span>
-            <h2>Esboços Bíblicos Volume 3</h2>
-            <p>Conheça mais sobre o livro Esboços Bíblicos Volume 3 e aprofunde sua fé.</p>
-            <video src="videos/ebook2.mp4" controls></video>
-        </div>
+  </div>
+  
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal(1)">&times;</span>
+      <h2>Livro 2</h2>
+      <video src="videos/ebook2.mp4" controls></video>
     </div>
-    
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="fecharModal(2)">&times;</span>
-            <h2>A Consequência da Soberania Divina</h2>
-            <p>Conheça mais sobre o livro A Consequência da Soberania Divina e aprofunde sua fé.</p>
-            <video src="videos/ebook3.mp4" controls></video>
-        </div>
+  </div>
+  
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal(2)">&times;</span>
+      <h2>Livro 3</h2>
+      <video src="videos/ebook3.mp4" controls></video>
     </div>
-    
-    <div id="modal3" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="fecharModal(3)">&times;</span>
-            <h2>Olhe para Cristo Vol. 1</h2>
-            <p>Conheça mais sobre o livro Olhe para Cristo Vol. 1 e aprofunde sua fé.</p>
-            <video src="videos/ebook4.mp4" controls></video>
-        </div>
+  </div>
+  
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal(3)">&times;</span>
+      <h2>Livro 4</h2>
+      <video src="videos/ebook4.mp4" controls></video>
     </div>
-    
-    <div id="modal4" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="fecharModal(4)">&times;</span>
-            <h2>Olhe para Cristo Vol. 2</h2>
-            <p>Conheça mais sobre o livro Olhe para Cristo Vol. 2 e aprofunde sua fé.</p>
-            <video src="videos/ebook5.mp4" controls></video>
-        </div>
+  </div>
+  
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal(4)">&times;</span>
+      <h2>Livro 5</h2>
+      <video src="videos/ebook5.mp4" controls></video>
     </div>
-    
-    <div id="modal5" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="fecharModal(5)">&times;</span>
-            <h2>Santidade, a Lei da Casa de Deus</h2>
-            <p>Conheça mais sobre o livro Santidade, a Lei da Casa de Deus e aprofunde sua fé.</p>
-            <video src="videos/ebook6.mp4" controls></video>
-        </div>
+  </div>
+  
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal(5)">&times;</span>
+      <h2>Livro 6</h2>
+      <video src="videos/ebook6.mp4" controls></video>
     </div>
-    
-    <div id="modal6" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="fecharModal(6)">&times;</span>
-            <h2>Soberania e Salvação</h2>
-            <p>Conheça mais sobre o livro Soberania e Salvação e aprofunde sua fé.</p>
-            <video src="videos/ebook7.mp4" controls></video>
-        </div>
+  </div>
+  
+  <div id="modal6" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal(6)">&times;</span>
+      <h2>Livro 7</h2>
+      <video src="videos/ebook7.mp4" controls></video>
     </div>
-    
-
-    <div class='comments'><h3>Comentários</h3>
-<p>"Comentário exemplo 1: Livro maravilhoso, recomendo muito!" - Usuário 1</p>
-<p>"Comentário exemplo 2: Livro maravilhoso, recomendo muito!" - Usuário 2</p>
-<p>"Comentário exemplo 3: Livro maravilhoso, recomendo muito!" - Usuário 3</p>
-<p>"Comentário exemplo 4: Livro maravilhoso, recomendo muito!" - Usuário 4</p>
-<p>"Comentário exemplo 5: Livro maravilhoso, recomendo muito!" - Usuário 5</p>
-<p>"Comentário exemplo 6: Livro maravilhoso, recomendo muito!" - Usuário 6</p>
-<p>"Comentário exemplo 7: Livro maravilhoso, recomendo muito!" - Usuário 7</p>
-<p>"Comentário exemplo 8: Livro maravilhoso, recomendo muito!" - Usuário 8</p>
-<p>"Comentário exemplo 9: Livro maravilhoso, recomendo muito!" - Usuário 9</p>
-<p>"Comentário exemplo 10: Livro maravilhoso, recomendo muito!" - Usuário 10</p>
-<p>"Comentário exemplo 11: Livro maravilhoso, recomendo muito!" - Usuário 11</p>
-<p>"Comentário exemplo 12: Livro maravilhoso, recomendo muito!" - Usuário 12</p>
-<p>"Comentário exemplo 13: Livro maravilhoso, recomendo muito!" - Usuário 13</p>
-<p>"Comentário exemplo 14: Livro maravilhoso, recomendo muito!" - Usuário 14</p>
-<p>"Comentário exemplo 15: Livro maravilhoso, recomendo muito!" - Usuário 15</p>
-<p>"Comentário exemplo 16: Livro maravilhoso, recomendo muito!" - Usuário 16</p>
-<p>"Comentário exemplo 17: Livro maravilhoso, recomendo muito!" - Usuário 17</p>
-<p>"Comentário exemplo 18: Livro maravilhoso, recomendo muito!" - Usuário 18</p>
-<p>"Comentário exemplo 19: Livro maravilhoso, recomendo muito!" - Usuário 19</p>
-<p>"Comentário exemplo 20: Livro maravilhoso, recomendo muito!" - Usuário 20</p>
-<p>"Comentário exemplo 21: Livro maravilhoso, recomendo muito!" - Usuário 21</p>
-<p>"Comentário exemplo 22: Livro maravilhoso, recomendo muito!" - Usuário 22</p>
-<p>"Comentário exemplo 23: Livro maravilhoso, recomendo muito!" - Usuário 23</p>
-<p>"Comentário exemplo 24: Livro maravilhoso, recomendo muito!" - Usuário 24</p>
-<p>"Comentário exemplo 25: Livro maravilhoso, recomendo muito!" - Usuário 25</p>
-<p>"Comentário exemplo 26: Livro maravilhoso, recomendo muito!" - Usuário 26</p>
-<p>"Comentário exemplo 27: Livro maravilhoso, recomendo muito!" - Usuário 27</p>
-<p>"Comentário exemplo 28: Livro maravilhoso, recomendo muito!" - Usuário 28</p>
-<p>"Comentário exemplo 29: Livro maravilhoso, recomendo muito!" - Usuário 29</p>
-<p>"Comentário exemplo 30: Livro maravilhoso, recomendo muito!" - Usuário 30</p>
-<p>"Comentário exemplo 31: Livro maravilhoso, recomendo muito!" - Usuário 31</p>
-<p>"Comentário exemplo 32: Livro maravilhoso, recomendo muito!" - Usuário 32</p>
-<p>"Comentário exemplo 33: Livro maravilhoso, recomendo muito!" - Usuário 33</p>
-<p>"Comentário exemplo 34: Livro maravilhoso, recomendo muito!" - Usuário 34</p>
-<p>"Comentário exemplo 35: Livro maravilhoso, recomendo muito!" - Usuário 35</p>
-<p>"Comentário exemplo 36: Livro maravilhoso, recomendo muito!" - Usuário 36</p>
-<p>"Comentário exemplo 37: Livro maravilhoso, recomendo muito!" - Usuário 37</p>
-<p>"Comentário exemplo 38: Livro maravilhoso, recomendo muito!" - Usuário 38</p>
-<p>"Comentário exemplo 39: Livro maravilhoso, recomendo muito!" - Usuário 39</p>
-<p>"Comentário exemplo 40: Livro maravilhoso, recomendo muito!" - Usuário 40</p>
-<p>"Comentário exemplo 41: Livro maravilhoso, recomendo muito!" - Usuário 41</p>
-<p>"Comentário exemplo 42: Livro maravilhoso, recomendo muito!" - Usuário 42</p>
-<p>"Comentário exemplo 43: Livro maravilhoso, recomendo muito!" - Usuário 43</p>
-<p>"Comentário exemplo 44: Livro maravilhoso, recomendo muito!" - Usuário 44</p>
-<p>"Comentário exemplo 45: Livro maravilhoso, recomendo muito!" - Usuário 45</p>
-<p>"Comentário exemplo 46: Livro maravilhoso, recomendo muito!" - Usuário 46</p>
-<p>"Comentário exemplo 47: Livro maravilhoso, recomendo muito!" - Usuário 47</p>
-<p>"Comentário exemplo 48: Livro maravilhoso, recomendo muito!" - Usuário 48</p>
-<p>"Comentário exemplo 49: Livro maravilhoso, recomendo muito!" - Usuário 49</p>
-<p>"Comentário exemplo 50: Livro maravilhoso, recomendo muito!" - Usuário 50</p>
-</div>
-
-    <a href="https://wa.me/5519986083276" class="whatsapp-button" target="_blank">💬</a>
-
-    <script src="js/script.js"></script>
+  </div>
+  
+  <a href="https://wa.me/5519986083276" class="whatsapp-button" target="_blank">💬</a>
+  <script src="js/script.js"></script>
 </body>
 </html>
